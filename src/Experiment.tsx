@@ -52,7 +52,7 @@ const Hardback: FC<PropsWithChildren<HTMLAttributes<HTMLDivElement>>> = ({
         ...style,
       }}
       className={`
-        relative z-10 aspect-[6/9] h-full rounded-md bg-[#3E4149] bg-cover
+        relative z-10 aspect-[6/9] h-full rounded-sm bg-[#3E4149] bg-cover
         bg-center bg-no-repeat
         ${className}
       `}
@@ -60,22 +60,15 @@ const Hardback: FC<PropsWithChildren<HTMLAttributes<HTMLDivElement>>> = ({
       <div
         style={{
           background:
-            "linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 1.23%, rgba(255, 255, 255, 0.00) 98.46%, rgba(255, 255, 255, 0.20) 100%)",
+            "linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 1.23%, rgba(255, 255, 255, 0.00) 98.46%, rgba(255, 255, 255, 0.20) 100%), linear-gradient(90deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 0.79%, rgba(255, 255, 255, 0.30) 1.36%, rgba(255, 255, 255, 0.10) 1.94%, rgba(255, 255, 255, 0.10) 2.78%, rgba(0, 0, 0, 0.10) 4.01%, rgba(255, 255, 255, 0.10) 5.02%, rgba(255, 255, 255, 0.20) 5.53%, rgba(255, 255, 255, 0.10) 5.94%, rgba(254, 254, 254, 0.00) 6.43%, rgba(255, 255, 255, 0.00) 98.73%, rgba(255, 255, 255, 0.20) 100%)",
         }}
-        className="absolute inset-0 rounded-md"
-      />
-      <div
-        style={{
-          background:
-            "linear-gradient(90deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 0.79%, rgba(255, 255, 255, 0.30) 1.36%, rgba(255, 255, 255, 0.10) 1.94%, rgba(255, 255, 255, 0.10) 2.78%, rgba(0, 0, 0, 0.10) 4.01%, rgba(255, 255, 255, 0.10) 5.02%, rgba(255, 255, 255, 0.20) 5.53%, rgba(255, 255, 255, 0.10) 5.94%, rgba(254, 254, 254, 0.00) 6.43%, rgba(255, 255, 255, 0.00) 98.73%, rgba(255, 255, 255, 0.20) 100%)",
-        }}
-        className="absolute inset-0 rounded-md"
+        className="absolute inset-0 rounded-sm"
       />
       <div
         style={{
           backgroundImage: "url('/texture.jpeg')",
         }}
-        className="absolute inset-0 rounded-md bg-cover bg-center bg-no-repeat opacity-60 mix-blend-hard-light"
+        className="absolute inset-0 rounded-sm bg-cover bg-center bg-no-repeat opacity-40 mix-blend-hard-light"
       />
       {children}
     </div>
@@ -84,7 +77,7 @@ const Hardback: FC<PropsWithChildren<HTMLAttributes<HTMLDivElement>>> = ({
 
 const Shelf: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className="relative flex h-64 w-full items-center justify-center p-4 pb-[1.125rem]">
+    <div className="relative flex h-64 w-full items-center justify-center p-4 pb-[1.2rem]">
       {children}
       <ShelfBackground className="absolute bottom-0 h-8 w-[160%]" />
     </div>
