@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.book:hover {
+  transform: perspective(1000px) rotateY(-30deg);
+}
